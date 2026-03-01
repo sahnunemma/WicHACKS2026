@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://cpgnbbnv6ebq"]
+
+[ext_resource type="Texture2D" uid="uid://c53q21p0kfjna" path="res://files/2nd mini.png" id="1_g6v7b"]
+[ext_resource type="Script" uid="uid://bue1lc12m33iu" path="res://files/bug.gd" id="1_hs7dx"]
+[ext_resource type="Texture2D" uid="uid://cpya3712x2oje" path="res://files/shop.png" id="3_q3ryj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gu2e"]
+atlas = ExtResource("1_g6v7b")
+region = Rect2(480, 64, 359, 338)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vuexv"]
+atlas = ExtResource("1_g6v7b")
+region = Rect2(839, 64, 359, 338)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qla4"]
+atlas = ExtResource("1_g6v7b")
+region = Rect2(1198, 64, 359, 338)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c761e"]
+atlas = ExtResource("3_q3ryj")
+region = Rect2(44, 51, 234, 202)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bld5l"]
+atlas = ExtResource("1_g6v7b")
+region = Rect2(121, 64, 359, 338)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hs7dx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6gu2e")
+}],
+"loop": true,
+"name": &"bug1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vuexv")
+}],
+"loop": true,
+"name": &"bug2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qla4")
+}],
+"loop": true,
+"name": &"bug3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c761e")
+}],
+"loop": true,
+"name": &"fish",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bld5l")
+}],
+"loop": true,
+"name": &"paw",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5tblr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g6v7b"]
+radius = 69.0
+height = 138.0
+
+[node name="Bug" type="Area2D" unique_id=519361387]
+script = ExtResource("1_hs7dx")
+
+[node name="enemies_paw" type="AnimatedSprite2D" parent="." unique_id=582515672]
+position = Vector2(4, 1)
+scale = Vector2(0.5, 0.485)
+sprite_frames = SubResource("SpriteFrames_hs7dx")
+animation = &"fish"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="enemies_paw" unique_id=1476867801]
+sprite_frames = SubResource("SpriteFrames_5tblr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2125877571]
+position = Vector2(0, -2)
+shape = SubResource("CapsuleShape2D_g6v7b")

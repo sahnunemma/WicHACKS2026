@@ -1,18 +1,12 @@
 [gd_scene format=3 uid="uid://c3qkxt8cslqii"]
 
-[ext_resource type="Texture2D" uid="uid://dctagwl2hiq83" path="res://main/home_background2.png" id="1_w1mvj"]
 [ext_resource type="Texture2D" uid="uid://cmxw7f72ybsgx" path="res://main/w1.png" id="2_2ayvv"]
 [ext_resource type="Texture2D" uid="uid://dmtxbgst8flwv" path="res://main/window.png" id="2_5btcc"]
-[ext_resource type="Texture2D" uid="uid://c5pxf3lwdt3ff" path="res://main/window_anim1.png" id="2_51nlh"]
 [ext_resource type="Script" uid="uid://db6mttdmuhrxm" path="res://main/game.gd" id="2_w1mvj"]
-[ext_resource type="Texture2D" uid="uid://caa21bywhvbh1" path="res://main/window_anim2.png" id="3_f1bvf"]
 [ext_resource type="Texture2D" uid="uid://mf1ojej7uafl" path="res://main/button.png" id="3_lxycn"]
 [ext_resource type="Texture2D" uid="uid://diia5uqnci22j" path="res://main/w2.png" id="3_w1mvj"]
 [ext_resource type="Texture2D" uid="uid://h7tlx2151l8v" path="res://main/sunflower.png" id="3_wvorr"]
-[ext_resource type="Texture2D" uid="uid://7jkxu6m6krkv" path="res://main/window_anim3.png" id="4_aqkoq"]
 [ext_resource type="Texture2D" uid="uid://bglej3midr7gq" path="res://main/w3.png" id="4_lxycn"]
-[ext_resource type="Texture2D" uid="uid://bemfwfrc1awju" path="res://main/window_anim4.png" id="5_ma6c5"]
-[ext_resource type="Texture2D" uid="uid://xtf0tf1hftyd" path="res://main/window_anim5.png" id="6_cidvt"]
 [ext_resource type="Texture2D" uid="uid://1qdnhk1iv05b" path="res://main/widgetSleep3.png" id="7_rdsdt"]
 [ext_resource type="Texture2D" uid="uid://dt754rrgjc8jk" path="res://main/bathe.png" id="7_tdh31"]
 [ext_resource type="Script" uid="uid://cse6jdtavsasl" path="res://main/cat_stats.gd" id="7_x0ehs"]
@@ -37,28 +31,8 @@
 [ext_resource type="Texture2D" uid="uid://4mb57po1ywwq" path="res://main/yarn.png" id="26_7ot1m"]
 [ext_resource type="Texture2D" uid="uid://xfr7kwc5frxf" path="res://main/crown.png" id="29_74mcf"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_5j460"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_51nlh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_f1bvf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_aqkoq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_ma6c5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_cidvt")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5e6f5"]
+load_path = "res://.godot/imported/home_background2.png-03db2cc6a2741fbaed671a185db3a0d6.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lxycn"]
 animations = [{
@@ -95,16 +69,11 @@ bg_color = Color(0.42037106, 0.0014571104, 0.6349121, 1)
 offset_top = -260.0
 offset_right = 1920.0
 offset_bottom = 820.0
-texture = ExtResource("1_w1mvj")
+texture = SubResource("CompressedTexture2D_5e6f5")
 expand_mode = 1
 
-[node name="Window1" type="AnimatedSprite2D" parent="." unique_id=1998681443]
-visible = false
-position = Vector2(1181, 199)
-sprite_frames = SubResource("SpriteFrames_5j460")
-frame_progress = 0.9025807
-
 [node name="Window" type="Sprite2D" parent="." unique_id=1379765424]
+visible = false
 position = Vector2(1179, 194)
 texture = ExtResource("2_5btcc")
 

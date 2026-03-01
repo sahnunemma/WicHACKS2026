@@ -87,7 +87,7 @@ func _on_bathe_2_pressed() -> void:
 				Stats.bath = 100
 
 func _on_games_2_pressed() -> void:
-	get_tree().change_scene_to_file("res://main.tscn")
+	get_tree().change_scene_to_file("res://buffer.tscn")
 
 
 func _on_area_2d_mouse_entered() -> void:

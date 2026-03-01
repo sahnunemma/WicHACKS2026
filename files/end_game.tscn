@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://ch1hdu5ua4yc0"]
+
+[ext_resource type="Script" uid="uid://848rod20jeju" path="res://files/end_game.gd" id="1_weimh"]
+[ext_resource type="FontFile" uid="uid://1cq2mem7hm0x" path="res://files/SuperAdorable-MAvyp.ttf" id="2_5q2h6"]
+
+[node name="EndGame" type="Node2D" unique_id=1948468505]
+script = ExtResource("1_weimh")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1825552825]
+z_index = 5
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.6742703, 0.64397097, 0.71035486, 1)
+
+[node name="Label" type="Label" parent="." unique_id=686500527]
+z_index = 5
+offset_left = 100.0
+offset_top = 99.0
+offset_right = 1214.0
+offset_bottom = 682.0
+theme_override_fonts/font = ExtResource("2_5q2h6")
+theme_override_font_sizes/font_size = 215
+text = "Game Over!"
+
+[node name="Button" type="Button" parent="." unique_id=1089746003]
+z_index = 5
+offset_left = 764.0
+offset_top = 768.0
+offset_right = 1164.0
+offset_bottom = 945.0
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_5q2h6")
+theme_override_font_sizes/font_size = 150
+text = "Back"
+
+[node name="CoinLabel" type="Label" parent="." unique_id=1182968638]
+z_index = 5
+offset_left = 108.0
+offset_top = 279.0
+offset_right = 1238.0
+offset_bottom = 520.0
+theme_override_fonts/font = ExtResource("2_5q2h6")
+theme_override_font_sizes/font_size = 215
+text = "coins: "
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

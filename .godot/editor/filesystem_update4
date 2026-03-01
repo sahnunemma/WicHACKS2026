@@ -12,3 +12,9 @@ res://main.tscn
 res://main.gd
 res://main/Stats.gd
 res://main/Coins.gd
+res://main/instructions.tscn
+res://buffer.tscn
+res://buffer.gd
+res://files/end_game.gd
+res://files/end_game.tscn
+res://files/panel.gd
