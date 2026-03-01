@@ -1,0 +1,7 @@
+res://food.tscn
+res://main.tscn
+res://main.gd
+res://game_over.tscn
+res://game_over.gd
+res://food.gd
+res://hud.tscn

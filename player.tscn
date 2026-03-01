@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://ckudr8chj1kgo"]
 
 [ext_resource type="Script" uid="uid://cjvqm1qwpcrio" path="res://player.gd" id="1_sweqy"]
-[ext_resource type="Texture2D" uid="uid://djjrnlewd61tu" path="res://art/Minigame_cat_ui_1_up.png" id="2_sweqy"]
-[ext_resource type="Texture2D" uid="uid://c1och3jy0x8id" path="res://art/Minigame_cat_ui_1_up1.png" id="3_2hs0m"]
-[ext_resource type="Texture2D" uid="uid://xjckc5ipfs0e" path="res://art/Minigame_cat_ui_1right_walk1 copy.png" id="4_sweqy"]
-[ext_resource type="Texture2D" uid="uid://ynagce7rha0u" path="res://art/Minigame_cat_ui_1right_walk copy.png" id="5_2hs0m"]
+[ext_resource type="Texture2D" uid="uid://f36sxpcvwmo5" path="res://art/Minigame_cat_ui_1up copy.png" id="2_sweqy"]
+[ext_resource type="Texture2D" uid="uid://ban7e1mj5wrqh" path="res://art/Minigame_cat_ui_1up.png" id="3_2hs0m"]
+[ext_resource type="Texture2D" uid="uid://d22vqqps3lk6a" path="res://art/Minigame_cat_ui_1walk1.png" id="4_sweqy"]
+[ext_resource type="Texture2D" uid="uid://ngvndq2ioeob" path="res://art/Minigame_cat_ui_1walk.png" id="5_2hs0m"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sweqy"]
 animations = [{

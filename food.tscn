@@ -1,16 +1,34 @@
 [gd_scene format=3 uid="uid://jeptelemf5cr"]
 
 [ext_resource type="Script" uid="uid://ct8aaioqi1pga" path="res://food.gd" id="1_q6vj8"]
-[ext_resource type="Texture2D" uid="uid://cudfd5upfr40m" path="res://art/enemyWalking_1.png" id="2_pohk7"]
+[ext_resource type="Texture2D" uid="uid://c03ohxjvcwpit" path="res://art/tuna.png" id="2_pohk7"]
+[ext_resource type="Texture2D" uid="uid://c2efpjgxqprpq" path="res://art/bloob.png" id="2_v8piq"]
+[ext_resource type="Texture2D" uid="uid://caow5xtduuw42" path="res://art/treat.png" id="3_5fm71"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8txok"]
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("2_v8piq")
+}],
+"loop": true,
+"name": &"bloob",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_5fm71")
+}],
+"loop": true,
+"name": &"treat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("2_pohk7")
 }],
 "loop": true,
-"name": &"default",
+"name": &"tuna",
 "speed": 5.0
 }]
 
@@ -24,6 +42,7 @@ script = ExtResource("1_q6vj8")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1021349023]
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_8txok")
+animation = &"tuna"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1341960561]
 scale = Vector2(0.5, 0.5)

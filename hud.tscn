@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dvewtmm6d837k"]
 
 [ext_resource type="Script" uid="uid://cg8yakgevo7wv" path="res://hud.gd" id="1_37p78"]
+[ext_resource type="FontFile" uid="uid://c5xl0s4op0nky" path="res://super-adorable-font/SuperAdorable-MAvyp.ttf" id="2_8sq4i"]
+[ext_resource type="FontFile" uid="uid://dxpxabo1yjwgy" path="res://super-shiny-font/SuperShiny-0v0rG.ttf" id="3_640wx"]
 
 [node name="HUD" type="CanvasLayer" unique_id=1521170671]
 script = ExtResource("1_37p78")
@@ -8,6 +10,7 @@ script = ExtResource("1_37p78")
 [node name="ScoreLabel" type="Label" parent="." unique_id=635333919]
 offset_right = 230.0
 offset_bottom = 179.0
+theme_override_fonts/font = ExtResource("2_8sq4i")
 theme_override_font_sizes/font_size = 64
 text = "COINS: 
 "
@@ -25,6 +28,7 @@ offset_right = 20.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_8sq4i")
 theme_override_font_sizes/font_size = 64
 text = "SHOPPING
 "
@@ -42,6 +46,9 @@ offset_right = 100.0
 offset_bottom = 160.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_640wx")
+theme_override_font_sizes/font_size = 40
+text = "START"
 
 [node name="StartTimerLabel" type="Label" parent="." unique_id=610453007]
 anchors_preset = 5
@@ -51,6 +58,7 @@ offset_left = -20.0
 offset_right = 20.0
 offset_bottom = 23.0
 grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_8sq4i")
 theme_override_font_sizes/font_size = 64
 text = "0:00"
 

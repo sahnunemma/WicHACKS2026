@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://jeptelemf5cr" path="res://food.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://ckudr8chj1kgo" path="res://player.tscn" id="3_5vw27"]
 [ext_resource type="PackedScene" uid="uid://dvewtmm6d837k" path="res://hud.tscn" id="4_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://c22pgbtnnv0o0" path="res://art/grass_bg.png" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://wkeqqplnlavj" path="res://game_over.tscn" id="6_7mycd"]
 
 [node name="Main" type="Node2D" unique_id=1180998396]
 script = ExtResource("1_ig7tw")
@@ -25,6 +27,14 @@ position = Vector2(950, 1000)
 position = Vector2(950, 1000)
 
 [node name="HUD" parent="." unique_id=1521170671 instance=ExtResource("4_1bvp3")]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1196850176]
+z_index = -1
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("5_lquwl")
+
+[node name="GameOver" parent="." unique_id=1703850365 instance=ExtResource("6_7mycd")]
 
 [connection signal="collect" from="Food" to="." method="_on_food_collect"]
 [connection signal="timeout" from="FoodTimer" to="." method="_on_food_timer_timeout"]

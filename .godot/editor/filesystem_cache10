@@ -1,0 +1,29 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1772353558
+food.gd::GDScript::6174554304945549912::1772352988::0::1::::<>Node2D<><>0<>0<><>::
+food.tscn::PackedScene::640902016018478709::1772352988::0::1::::<><><>0<>0<><>::uid://ct8aaioqi1pga::::res://food.gd<>uid://c03ohxjvcwpit::::res://art/tuna.png<>uid://c2efpjgxqprpq::::res://art/bloob.png<>uid://caow5xtduuw42::::res://art/treat.png
+game_over.gd::GDScript::1327939308740573981::1772353428::0::1::::<>CanvasLayer<><>0<>0<><>::
+game_over.tscn::PackedScene::1565070642314118043::1772352701::0::1::::<><><>0<>0<><>::uid://s6i74fn53ti8::::res://game_over.gd<>uid://c5xl0s4op0nky::::res://super-adorable-font/SuperAdorable-MAvyp.ttf<>uid://w0ufnqo8uqq0::::res://art/coin.png<>uid://dxpxabo1yjwgy::::res://super-shiny-font/SuperShiny-0v0rG.ttf
+hud.gd::GDScript::5263556637637484865::1772348760::0::1::::<>CanvasLayer<><>0<>0<><>::
+hud.tscn::PackedScene::8642855632650969938::1772353558::0::1::::<><><>0<>0<><>::uid://cg8yakgevo7wv::::res://hud.gd<>uid://c5xl0s4op0nky::::res://super-adorable-font/SuperAdorable-MAvyp.ttf<>uid://dxpxabo1yjwgy::::res://super-shiny-font/SuperShiny-0v0rG.ttf
+icon.svg::CompressedTexture2D::1790880795757653::1772348760::1772349688::1::::<><><>0<>0<>1d558fff71561543e2cf7e0d300c3350<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main.gd::GDScript::6005496119968205597::1772353428::0::1::::<>Node<><>0<>0<><>::
+main.tscn::PackedScene::5926153398409090926::1772351198::0::1::::<><><>0<>0<><>::uid://crtdv5djku0ij::::res://main.gd<>uid://jeptelemf5cr::::res://food.tscn<>uid://ckudr8chj1kgo::::res://player.tscn<>uid://dvewtmm6d837k::::res://hud.tscn<>uid://c22pgbtnnv0o0::::res://art/grass_bg.png
+player.gd::GDScript::5448887185718568354::1772348760::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::5516231605013676354::1772350104::0::1::::<><><>0<>0<><>::uid://cjvqm1qwpcrio::::res://player.gd<>uid://djjrnlewd61tu::::res://art/Minigame_cat_ui_1_up.png<>uid://c1och3jy0x8id::::res://art/Minigame_cat_ui_1_up1.png<>uid://xjckc5ipfs0e::::res://art/Minigame_cat_ui_1right_walk1 copy.png<>uid://ynagce7rha0u::::res://art/Minigame_cat_ui_1right_walk copy.png
+::res://art/::1772353593
+bloob.png::CompressedTexture2D::6676528511547705002::1772350237::1772350327::1::::<><><>0<>0<>dc2e22bdb2751715628a2c2ac664ab75<>res://.godot/imported/bloob.png-2575e7261bf7dad0090edca2d1df3716.ctex::
+coin.png::CompressedTexture2D::1596987980914483305::1772350181::1772350327::1::::<><><>0<>0<>b9e08097080c11b4d66c12a315abb21d<>res://.godot/imported/coin.png-7a22d78603b91b8bca023a7cd8e523dd.ctex::
+grass_bg.png::CompressedTexture2D::6724599897111138481::1772351118::1772351168::1::::<><><>0<>0<>62e9259ae82cf54e06098e6e0fa4f854<>res://.godot/imported/grass_bg.png-58aae8cbfcef963ddcad42d7dbb2a2a5.ctex::
+Minigame_cat_ui_1up copy.png::CompressedTexture2D::410662397698816682::1772350022::1772350079::1::::<><><>0<>0<>fc18932804870e97430f14715a3b208e<>res://.godot/imported/Minigame_cat_ui_1up copy.png-8442c943c914fd238999ac6623cb04ae.ctex::
+Minigame_cat_ui_1up.png::CompressedTexture2D::2415209066034675099::1772349772::1772350079::1::::<><><>0<>0<>c59035a17e60377118d33a4b94628fce<>res://.godot/imported/Minigame_cat_ui_1up.png-6361bc5456daec1750124dbff109ade1.ctex::
+Minigame_cat_ui_1walk1.png::CompressedTexture2D::9111403522617734110::1772353580::1772353596::1::::<><><>0<>0<>6b0c9b026d4cf7f911159de9af4ed349<>res://.godot/imported/Minigame_cat_ui_1walk1.png-cafa6b2345a692d472b6e3da4b4cbeed.ctex::
+Minigame_cat_ui_1walk.png::CompressedTexture2D::926139689512562621::1772353593::1772353596::1::::<><><>0<>0<>fa29115b312c1a470dfdf7351f720445<>res://.godot/imported/Minigame_cat_ui_1walk.png-8dc27f0ffc56108df3928ea277f09c4c.ctex::
+treat.png::CompressedTexture2D::4803133241153230797::1772350253::1772350327::1::::<><><>0<>0<>35864412a14ee7e0f87378c16f833aa0<>res://.godot/imported/treat.png-5c01eb74ade9c15e714dfbe970b39033.ctex::
+tuna.png::CompressedTexture2D::6586228796804742159::1772350275::1772350327::1::::<><><>0<>0<>139c3134a903ca2a2ae6a689270bd44d<>res://.godot/imported/tuna.png-65adff89c29f404f65ad89b6c6df0734.ctex::
+::res://super-adorable-font/::1772351677
+info.txt::TextFile::-1::1771062348::0::1::::<><><>0<>0<><>::
+SuperAdorable-MAvyp.ttf::FontFile::6926700887515371608::1771062348::1772351677::1::::<><><>0<>0<>b81f13c7b7741c8bb89cab25367179ea<>res://.godot/imported/SuperAdorable-MAvyp.ttf-415b5e19c2c7553c0c239017b98cabd5.fontdata::
+::res://super-shiny-font/::1772351677
+info.txt::TextFile::-1::1770197942::0::1::::<><><>0<>0<><>::
+SuperShiny-0v0rG.ttf::FontFile::8805967687262957764::1770197942::1772351677::1::::<><><>0<>0<>80ab15b7f886895d3664d2e7cbb03065<>res://.godot/imported/SuperShiny-0v0rG.ttf-28fd5c9e3fb0efdae25f34f3fde32def.fontdata::

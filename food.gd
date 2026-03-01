@@ -5,7 +5,8 @@ signal collect
 
 
 func _ready() -> void:
-	$AnimatedSprite2D.play()
+	var foods = Array($AnimatedSprite2D.sprite_frames.get_animation_names())
+	$AnimatedSprite2D.play(foods.pick_random())
 
 func _on_body_entered(body: Node2D) -> void:
 	collect.emit()
