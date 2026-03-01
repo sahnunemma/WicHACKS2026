@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://jeptelemf5cr"]
+
+[ext_resource type="Script" uid="uid://ct8aaioqi1pga" path="res://food.gd" id="1_q6vj8"]
+[ext_resource type="Texture2D" uid="uid://cudfd5upfr40m" path="res://art/enemyWalking_1.png" id="2_pohk7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8txok"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pohk7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pohk7"]
+radius = 67.0
+height = 134.0
+
+[node name="food" type="Area2D" unique_id=1762749292]
+script = ExtResource("1_q6vj8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1021349023]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_8txok")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1341960561]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("CapsuleShape2D_pohk7")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
