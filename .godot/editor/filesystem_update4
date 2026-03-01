@@ -1,20 +1,3 @@
-res://main/main menu.tscn
-res://main/main_menu.gd
-res://main/instructions.gd
 res://main/cat_stats.gd
-res://main/game.gd
-res://main/store.tscn
-res://main/store.gd
-res://main/home.tscn
-res://game_over.gd
-res://game_over.tscn
-res://main.tscn
-res://main.gd
-res://main/Stats.gd
-res://main/Coins.gd
-res://main/instructions.tscn
-res://buffer.tscn
-res://buffer.gd
-res://files/end_game.gd
-res://files/end_game.tscn
-res://files/panel.gd
+res://final_game_over.gd
+res://FinalGameOver.tscn

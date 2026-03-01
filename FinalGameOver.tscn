@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://ddqcni04aej2p"]
+
+[ext_resource type="Texture2D" uid="uid://nknq5gd1o2jd" path="res://art/creepy bg.png" id="1_kjk35"]
+[ext_resource type="Script" uid="uid://dqp3ihobocay6" path="res://final_game_over.gd" id="1_w7eeo"]
+[ext_resource type="FontFile" uid="uid://d11qckh7liqin" path="res://main/SuperAdorable-MAvyp.ttf" id="2_w7eeo"]
+[ext_resource type="Texture2D" uid="uid://mf1ojej7uafl" path="res://main/button.png" id="3_pcpib"]
+
+[node name="Node2D" type="Node2D" unique_id=1422572744]
+script = ExtResource("1_w7eeo")
+
+[node name="BG" type="TextureRect" parent="." unique_id=1052080693]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_kjk35")
+
+[node name="Label" type="Label" parent="BG" unique_id=744290163]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Label" type="Label" parent="." unique_id=733200705]
+offset_left = 29.0
+offset_top = 334.0
+offset_right = 1910.0
+offset_bottom = 528.0
+theme_override_fonts/font = ExtResource("2_w7eeo")
+theme_override_font_sizes/font_size = 173
+text = "Widget was not happy :("
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=945763671]
+offset_left = 32.0
+offset_top = 527.0
+offset_right = 1913.0
+offset_bottom = 721.0
+theme_override_fonts/font = ExtResource("2_w7eeo")
+theme_override_font_sizes/font_size = 129
+text = "Try again next time"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Continue" type="TextureButton" parent="." unique_id=1856723862]
+offset_left = 720.0
+offset_top = 738.0
+offset_right = 1180.0
+offset_bottom = 853.0
+texture_normal = ExtResource("3_pcpib")
+
+[node name="Label" type="Label" parent="Continue" unique_id=1157408937]
+layout_mode = 0
+offset_right = 460.0
+offset_bottom = 115.0
+theme_override_fonts/font = ExtResource("2_w7eeo")
+theme_override_font_sizes/font_size = 50
+text = "Exit"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]
