@@ -55,15 +55,39 @@ func _on_window_pressed() -> void:
 	if Coins.coins >= 25 && not Stats.window:
 		Coins.coins -= 25
 		Stats.window = true
+		$"../Panel/Decor/Window/SoldOutWindow".visible = true
 
 
 func _on_sunflower_pressed() -> void:
 	if Coins.coins >= 50 && not Stats.sunflower:
 		Coins.coins -= 50
 		Stats.sunflower = true
+		$"../Panel/Decor/Sunflower/SoldOutSunflower".visible = true
 
 
 func _on_yarn_pressed() -> void:
 	if Coins.coins >= 75 && not Stats.yarn:
 		Coins.coins -= 75
 		Stats.yarn = true
+		$"../Panel/Decor/Yarn/SoldOutYarn".visible = true
+
+
+func _on_wings_pressed() -> void:
+	if Coins.coins >= 25 && not Stats.wings:
+		Coins.coins -= 25
+		Stats.wings = true
+		$"../Panel/Clothes/Wings/SoldOutWings".visible = true
+
+
+func _on_skirt_pressed() -> void:
+	if Coins.coins >= 50 && not Stats.skirt:
+		Coins.coins -= 50
+		Stats.skirt = true
+		$"../Panel/Clothes/Skirt/SoldOutSkirt".visible = true
+
+
+func _on_crown_pressed() -> void:
+	if Coins.coins >= 75 && not Stats.crown:
+		Coins.coins -= 75
+		Stats.crown = true
+		$"../Panel/Clothes/Crown/SoldOutCrown".visible = true

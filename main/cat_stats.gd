@@ -48,8 +48,18 @@ func _on_sleep_2_pressed() -> void:
 	if not onSponge:
 		if $".".frame == 3:
 			$".".frame = 0
+			if $"../DressUp_Menu/WearWings".button_pressed && Stats.wings:
+				$"../ButterflyWings".visible = true
+			if $"../DressUp_Menu/WearSkirt".button_pressed && Stats.skirt:
+				$"../Skirt".visible = true
+			if $"../DressUp_Menu/WearCrown".button_pressed && Stats.crown:
+				$"../Crown".visible = true
 		else:
 			$".".frame = 3
+			$"../ButterflyWings".visible = false
+			$"../Skirt".visible = false
+			$"../Crown".visible = false
+
 
 
 func _on_play_2_pressed() -> void:

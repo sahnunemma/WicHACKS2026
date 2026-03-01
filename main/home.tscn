@@ -19,11 +19,13 @@
 [ext_resource type="Texture2D" uid="uid://dsvtwkk81i4xe" path="res://main/food.png" id="8_x0ehs"]
 [ext_resource type="Texture2D" uid="uid://dgnqrohwsq3tp" path="res://main/happiness.png" id="9_rdsdt"]
 [ext_resource type="Texture2D" uid="uid://47vo0uvb48qc" path="res://main/sleep.png" id="10_d26pf"]
+[ext_resource type="Texture2D" uid="uid://bglwbwtuq7521" path="res://main/other butterfly wings.png" id="10_lfani"]
 [ext_resource type="FontFile" uid="uid://d11qckh7liqin" path="res://main/SuperAdorable-MAvyp.ttf" id="11_qlxsd"]
 [ext_resource type="Texture2D" uid="uid://bs6ygxo0y8rir" path="res://main/water.png" id="11_wh0ls"]
 [ext_resource type="Texture2D" uid="uid://b5rabshkj0ola" path="res://main/better coin.png" id="14_alrta"]
 [ext_resource type="Texture2D" uid="uid://b83yt78xm2v4g" path="res://main/heart.png" id="15_wh0ls"]
 [ext_resource type="Texture2D" uid="uid://ct7c1j2wggetf" path="res://main/water_bowl.png" id="16_7ot1m"]
+[ext_resource type="Texture2D" uid="uid://f3m2phc5muna" path="res://main/skirt.png" id="16_mgse2"]
 [ext_resource type="Texture2D" uid="uid://bx2arknuxqely" path="res://main/menu board.png" id="16_sa43c"]
 [ext_resource type="Texture2D" uid="uid://beaf0ew33m6d7" path="res://main/menu exit.png" id="17_c6lok"]
 [ext_resource type="Texture2D" uid="uid://bucdc6c7j6wuq" path="res://main/menu option.png" id="17_nnxq8"]
@@ -33,6 +35,7 @@
 [ext_resource type="Texture2D" uid="uid://dqvn8u10i2l68" path="res://main/milk.png" id="21_wvorr"]
 [ext_resource type="Texture2D" uid="uid://d0kp0dqqw322q" path="res://main/doccyp.png" id="22_7ot1m"]
 [ext_resource type="Texture2D" uid="uid://4mb57po1ywwq" path="res://main/yarn.png" id="26_7ot1m"]
+[ext_resource type="Texture2D" uid="uid://xfr7kwc5frxf" path="res://main/crown.png" id="29_74mcf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5j460"]
 animations = [{
@@ -119,6 +122,12 @@ text = "67"
 placeholder_text = "67"
 script = ExtResource("2_w1mvj")
 
+[node name="ButterflyWings" type="Sprite2D" parent="." unique_id=604401168]
+visible = false
+position = Vector2(881, 365)
+scale = Vector2(1.1, 1.9108762)
+texture = ExtResource("10_lfani")
+
 [node name="Widget" type="AnimatedSprite2D" parent="." unique_id=141104999]
 position = Vector2(889, 458)
 scale = Vector2(1, 1.0083333)
@@ -131,6 +140,18 @@ script = ExtResource("7_x0ehs")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Widget/Area2D" unique_id=710333400]
 position = Vector2(6.5, -43.636414)
 shape = SubResource("RectangleShape2D_wvorr")
+
+[node name="Skirt" type="Sprite2D" parent="." unique_id=1394522985]
+visible = false
+position = Vector2(896, 570)
+scale = Vector2(1.2375, 1.2374998)
+texture = ExtResource("16_mgse2")
+
+[node name="Crown" type="Sprite2D" parent="." unique_id=2103453263]
+visible = false
+position = Vector2(866, 131.00002)
+scale = Vector2(1.7099998, 1.7099998)
+texture = ExtResource("29_74mcf")
 
 [node name="Buttons" type="Panel" parent="." unique_id=616495999]
 clip_contents = true
@@ -490,6 +511,64 @@ theme_override_font_sizes/font_size = 20
 text = "Display?"
 alignment = 1
 
+[node name="DressUp_Menu" type="Sprite2D" parent="." unique_id=2003363390]
+visible = false
+position = Vector2(960, 540)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("16_sa43c")
+
+[node name="ExitDressMenu" type="TextureButton" parent="DressUp_Menu" unique_id=549858964]
+offset_left = 237.33334
+offset_top = -255.33333
+offset_right = 394.33334
+offset_bottom = -111.33333
+texture_normal = ExtResource("17_c6lok")
+
+[node name="Wings" type="Sprite2D" parent="DressUp_Menu" unique_id=1588144874]
+position = Vector2(-265.3333, -167.33333)
+scale = Vector2(0.33508772, 0.33508775)
+texture = ExtResource("10_lfani")
+
+[node name="Skirt" type="Sprite2D" parent="DressUp_Menu" unique_id=616855659]
+position = Vector2(-256, 5.3333454)
+scale = Vector2(0.6111114, 0.61111146)
+texture = ExtResource("16_mgse2")
+
+[node name="Crown" type="Sprite2D" parent="DressUp_Menu" unique_id=318512448]
+position = Vector2(-255.99997, 186.66666)
+scale = Vector2(1.0364287, 1.0364287)
+texture = ExtResource("29_74mcf")
+
+[node name="WearWings" type="CheckButton" parent="DressUp_Menu" unique_id=1439364008]
+offset_left = -116.0
+offset_top = -204.66667
+offset_right = 29.444397
+offset_bottom = -125.33336
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 20
+text = "Wear?"
+alignment = 1
+
+[node name="WearSkirt" type="CheckButton" parent="DressUp_Menu" unique_id=1407606395]
+offset_left = -116.0
+offset_top = -30.666672
+offset_right = 29.444397
+offset_bottom = 48.66664
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 20
+text = "Wear?"
+alignment = 1
+
+[node name="WearCrown" type="CheckButton" parent="DressUp_Menu" unique_id=1157687836]
+offset_left = -116.0
+offset_top = 149.33333
+offset_right = 29.444397
+offset_bottom = 228.66664
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 20
+text = "Wear?"
+alignment = 1
+
 [node name="Food_Drink_Menu" type="Sprite2D" parent="." unique_id=1887722658]
 visible = false
 position = Vector2(960, 540)
@@ -625,6 +704,7 @@ texture_normal = ExtResource("17_nnxq8")
 [connection signal="pressed" from="Buttons/Sleep2" to="Widget" method="_on_sleep_2_pressed"]
 [connection signal="pressed" from="Buttons/Games2" to="Widget" method="_on_games_2_pressed"]
 [connection signal="pressed" from="Buttons/Store2" to="TextEdit" method="_on_store_2_pressed"]
+[connection signal="pressed" from="Buttons/Dress Up2" to="TextEdit" method="_on_dress_up_2_pressed"]
 [connection signal="pressed" from="Buttons/Decorate2" to="TextEdit" method="_on_decorate_2_pressed"]
 [connection signal="pressed" from="MenuBoard/ExitMenu" to="TextEdit" method="_on_exit_menu_pressed"]
 [connection signal="pressed" from="MenuBoard/ExitGame" to="TextEdit" method="_on_exit_game_pressed"]
@@ -632,6 +712,10 @@ texture_normal = ExtResource("17_nnxq8")
 [connection signal="toggled" from="Decorate_Menu/DisplayWindow" to="TextEdit" method="_on_display_window_toggled"]
 [connection signal="toggled" from="Decorate_Menu/DisplaySunflower" to="TextEdit" method="_on_display_sunflower_toggled"]
 [connection signal="toggled" from="Decorate_Menu/DisplayYarn" to="TextEdit" method="_on_display_yarn_toggled"]
+[connection signal="pressed" from="DressUp_Menu/ExitDressMenu" to="TextEdit" method="_on_exit_dress_menu_pressed"]
+[connection signal="toggled" from="DressUp_Menu/WearWings" to="TextEdit" method="_on_wear_wings_toggled"]
+[connection signal="toggled" from="DressUp_Menu/WearSkirt" to="TextEdit" method="_on_wear_skirt_toggled"]
+[connection signal="toggled" from="DressUp_Menu/WearCrown" to="TextEdit" method="_on_wear_crown_toggled"]
 [connection signal="pressed" from="Food_Drink_Menu/ExitFoodMenu" to="TextEdit" method="_on_exit_food_menu_pressed"]
 [connection signal="pressed" from="Food_Drink_Menu/Blueberry" to="TextEdit" method="_on_blueberry_pressed"]
 [connection signal="pressed" from="Food_Drink_Menu/Fish" to="TextEdit" method="_on_fish_pressed"]

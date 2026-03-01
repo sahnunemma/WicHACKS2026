@@ -16,9 +16,9 @@ var doccyp = 0
 var sunflower = false
 var window = false
 var yarn = false
-var outfit1 = false
-var outfit2 = false
-var outfit3 = false
+var wings = false
+var skirt = false
+var crown = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

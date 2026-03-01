@@ -10,3 +10,5 @@ res://game_over.gd
 res://game_over.tscn
 res://main.tscn
 res://main.gd
+res://main/Stats.gd
+res://main/Coins.gd

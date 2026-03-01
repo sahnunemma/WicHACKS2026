@@ -217,3 +217,53 @@ func _on_exit_decor_menu_pressed() -> void:
 	$"../Buttons/Store2".disabled = false
 	$"../Buttons/Dress Up2".disabled = false
 	$"../Buttons/Decorate2".disabled = false
+
+
+func _on_wear_wings_toggled(toggled_on: bool) -> void:
+	if Stats.wings:
+		$"../ButterflyWings".visible = toggled_on
+
+
+func _on_wear_skirt_toggled(toggled_on: bool) -> void:
+	if Stats.skirt:
+		$"../Skirt".visible = toggled_on
+
+
+func _on_wear_crown_toggled(toggled_on: bool) -> void:
+	if Stats.crown:
+		$"../Crown".visible = toggled_on
+
+
+func _on_exit_dress_menu_pressed() -> void:
+	$"../DressUp_Menu".visible = false
+	
+	$"../DressUp_Menu/WearWings".disabled = true
+	$"../DressUp_Menu/WearSkirt".disabled = true
+	$"../DressUp_Menu/WearCrown".disabled = true
+	
+	$"../Buttons/Food_Drink2".disabled = false
+	$"../Buttons/Bathe2".disabled = false
+	$"../Buttons/Play2".disabled = false
+	$"../Buttons/Sleep2".disabled = false
+	$"../Buttons/Games2".disabled = false
+	$"../Buttons/Store2".disabled = false
+	$"../Buttons/Dress Up2".disabled = false
+	$"../Buttons/Decorate2".disabled = false
+
+
+func _on_dress_up_2_pressed() -> void:
+	if not $"../Widget".onSponge and $"../Widget".frame != 3:
+		$"../DressUp_Menu".visible = true
+		
+		$"../DressUp_Menu/WearWings".disabled = false
+		$"../DressUp_Menu/WearSkirt".disabled = false
+		$"../DressUp_Menu/WearCrown".disabled = false
+		
+		$"../Buttons/Food_Drink2".disabled = true
+		$"../Buttons/Bathe2".disabled = true
+		$"../Buttons/Play2".disabled = true
+		$"../Buttons/Sleep2".disabled = true
+		$"../Buttons/Games2".disabled = true
+		$"../Buttons/Store2".disabled = true
+		$"../Buttons/Dress Up2".disabled = true
+		$"../Buttons/Decorate2".disabled = true
