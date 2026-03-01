@@ -1,8 +1,8 @@
 extends Node
 
-var FOOD_DECAY_RATE = 1
+var FOOD_DECAY_RATE = 0.01
 var DRINK_DECAY_RATE = 0.01
-var BATH_DECAY_RATE = .5
+var BATH_DECAY_RATE = 0.01
 var HAPPY_DECAY_RATE = 0.01
 var SLEEP_DECAY_RATE = 0.01
 
@@ -27,6 +27,7 @@ func _process(_delta: float) -> void:
 	Stats.bath -= BATH_DECAY_RATE
 	Stats.happy -= HAPPY_DECAY_RATE
 	Stats.sleep -= SLEEP_DECAY_RATE
+	
 	if Stats.food <= 0 || Stats.bath <= 0 || Stats.drink <= 0 || Stats.happy <= 0|| Stats.sleep <= 0:
 		#switch to ending screen
 		get_tree().change_scene_to_file("res://FinalGameOver.tscn")
