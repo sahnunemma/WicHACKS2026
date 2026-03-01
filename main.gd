@@ -42,4 +42,5 @@ func _on_start_timer_timeout() -> void:
 
 func _on_food_collect() -> void:
 	score += 1
+	Coins.coins += 1
 	$HUD.update_score(score)

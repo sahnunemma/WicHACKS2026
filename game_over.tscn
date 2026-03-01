@@ -89,3 +89,5 @@ offset_bottom = 119.5
 grow_vertical = 2
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("2_yxx3c")
+
+[connection signal="pressed" from="EndSquare/ExitButton" to="." method="_on_exit_button_pressed"]

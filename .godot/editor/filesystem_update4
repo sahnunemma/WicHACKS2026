@@ -1,7 +1,12 @@
-res://food.tscn
+res://main/main menu.tscn
+res://main/main_menu.gd
+res://main/instructions.gd
+res://main/cat_stats.gd
+res://main/game.gd
+res://main/store.tscn
+res://main/store.gd
+res://main/home.tscn
+res://game_over.gd
+res://game_over.tscn
 res://main.tscn
 res://main.gd
-res://game_over.tscn
-res://game_over.gd
-res://food.gd
-res://hud.tscn

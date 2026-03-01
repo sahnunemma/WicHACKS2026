@@ -7,3 +7,7 @@ func _ready() -> void:
 
 func show_coins(coins):
 	$CoinLabel.text = str(coins)
+
+
+func _on_exit_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://main/home.tscn")

@@ -1,0 +1,338 @@
+[gd_scene format=3 uid="uid://cfrgfurc1npph"]
+
+[ext_resource type="Texture2D" uid="uid://b5rabshkj0ola" path="res://main/better coin.png" id="1_s3f3m"]
+[ext_resource type="FontFile" uid="uid://d11qckh7liqin" path="res://main/SuperAdorable-MAvyp.ttf" id="2_hayl1"]
+[ext_resource type="Texture2D" uid="uid://cxeb3cd34nbal" path="res://main/fish.png" id="2_jdgcu"]
+[ext_resource type="Script" uid="uid://c0y540gw73tcu" path="res://main/store.gd" id="2_sxxsk"]
+[ext_resource type="Texture2D" uid="uid://dr0by2piy6oh" path="res://main/blueberry.png" id="3_sxxsk"]
+[ext_resource type="Texture2D" uid="uid://dqnfbtq06krh0" path="res://main/treat.png" id="4_a4gqu"]
+[ext_resource type="Texture2D" uid="uid://bs6ygxo0y8rir" path="res://main/water.png" id="4_fsgxa"]
+[ext_resource type="Texture2D" uid="uid://dqvn8u10i2l68" path="res://main/milk.png" id="5_ecxbg"]
+[ext_resource type="Texture2D" uid="uid://d0kp0dqqw322q" path="res://main/doccyp.png" id="6_nvomd"]
+[ext_resource type="Texture2D" uid="uid://mf1ojej7uafl" path="res://main/button.png" id="6_sxxsk"]
+[ext_resource type="Texture2D" uid="uid://dmtxbgst8flwv" path="res://main/window.png" id="7_0sk1s"]
+[ext_resource type="Texture2D" uid="uid://h7tlx2151l8v" path="res://main/sunflower.png" id="8_hayl1"]
+[ext_resource type="Texture2D" uid="uid://4mb57po1ywwq" path="res://main/yarn.png" id="9_q7j3g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x8qpf"]
+bg_color = Color(0.7429044, 0.6471581, 0.4975857, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hayl1"]
+bg_color = Color(0.5211755, 0.43025485, 0.2709497, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q7j3g"]
+bg_color = Color(0.52156866, 0.43137255, 0.27058825, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jdax8"]
+bg_color = Color(0.52156866, 0.43137255, 0.27058825, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_afjsh"]
+bg_color = Color(0.52156866, 0.43137255, 0.27058825, 1)
+
+[node name="Node2D" type="Node2D" unique_id=2021249961]
+
+[node name="Panel" type="Panel" parent="." unique_id=98930905]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_x8qpf")
+
+[node name="Food" type="Panel" parent="Panel" unique_id=628581536]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 232.0
+offset_right = 840.0
+offset_bottom = 480.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hayl1")
+
+[node name="Blueberry" type="TextureButton" parent="Panel/Food" unique_id=1029631765]
+layout_mode = 0
+offset_left = -8.0
+offset_top = 24.0
+offset_right = 192.0
+offset_bottom = 224.0
+texture_normal = ExtResource("3_sxxsk")
+
+[node name="Label" type="Label" parent="Panel/Food/Blueberry" unique_id=1461946976]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 176.0
+offset_right = 192.0
+offset_bottom = 199.0
+theme_override_fonts/font = ExtResource("2_hayl1")
+theme_override_font_sizes/font_size = 35
+text = "10 coins"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Fish" type="TextureButton" parent="Panel/Food" unique_id=839525181]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 24.0
+offset_right = 456.0
+offset_bottom = 224.0
+texture_normal = ExtResource("2_jdgcu")
+
+[node name="Label2" type="Label" parent="Panel/Food/Fish" unique_id=499309425]
+layout_mode = 0
+offset_top = 176.0
+offset_right = 176.0
+offset_bottom = 225.0
+theme_override_fonts/font = ExtResource("2_hayl1")
+theme_override_font_sizes/font_size = 35
+text = "15 coins"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Treat" type="TextureButton" parent="Panel/Food" unique_id=750465798]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 24.0
+offset_right = 712.0
+offset_bottom = 224.0
+texture_normal = ExtResource("4_a4gqu")
+
+[node name="Label3" type="Label" parent="Panel/Food/Treat" unique_id=1128098861]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 176.0
+offset_right = 184.0
+offset_bottom = 225.0
+theme_override_fonts/font = ExtResource("2_hayl1")
+theme_override_font_sizes/font_size = 35
+text = "20 coins"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="Panel/Food" unique_id=1818883462]
+layout_mode = 0
+offset_top = 248.0
+offset_right = 704.0
+offset_bottom = 328.0
+theme_override_fonts/font = ExtResource("2_hayl1")
+theme_override_font_sizes/font_size = 50
+text = "Food"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Drink" type="Panel" parent="Panel" unique_id=97087086]
+layout_mode = 0
+offset_left = 1080.0
+offset_top = 232.0
+offset_right = 1784.0
+offset_bottom = 480.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_q7j3g")
+
+[node name="Water" type="TextureButton" parent="Panel/Drink" unique_id=1780613280]
+layout_mode = 0
+offset_left = -8.0
+offset_top = 24.0
+offset_right = 192.0
+offset_bottom = 224.0
+texture_normal = ExtResource("4_fsgxa")
+
+[node name="Label" type="Label" parent="Panel/Drink/Water" unique_id=1092107904]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 176.0
+offset_right = 192.0
+offset_bottom = 199.0
+theme_override_fonts/font = ExtResource("2_hayl1")
+theme_override_font_sizes/font_size = 35
+text = "10 coins"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Milk" type="TextureButton" parent="Panel/Drink" unique_id=1998580526]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 24.0
+offset_right = 456.0
+offset_bottom = 224.0
+texture_normal = ExtResource("5_ecxbg")
+
+[node name="Label2" type="Label" parent="Panel/Drink/Milk" unique_id=1474897634]
+layout_mode = 0
+offset_top = 176.0
+offset_right = 176.0
+offset_bottom = 225.0
+theme_override_fonts/font = ExtResource("2_hayl1")
+theme_override_font_sizes/font_size = 35
+text = "15 coins"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DoccyP" type="TextureButton" parent="Panel/Drink" unique_id=1754862000]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 24.0
+offset_right = 712.0
+offset_bottom = 224.0
+texture_normal = ExtResource("6_nvomd")
+
+[node name="Label3" type="Label" parent="Panel/Drink/DoccyP" unique_id=2114654599]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 176.0
+offset_right = 184.0
+offset_bottom = 225.0
+theme_override_fonts/font = ExtResource("2_hayl1")
+theme_override_font_sizes/font_size = 35
+text = "20 coins"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Panel/Drink" unique_id=1330086724]
+layout_mode = 0
+offset_top = 248.0
+offset_right = 704.0
+offset_bottom = 328.0
+theme_override_fonts/font = ExtResource("2_hayl1")
+theme_override_font_sizes/font_size = 50
+text = "Drink"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Clothes" type="Panel" parent="Panel" unique_id=2145078482]
+layout_mode = 0
+offset_left = 1080.0
+offset_top = 608.0
+offset_right = 1784.0
+offset_bottom = 856.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jdax8")
+
+[node name="Label6" type="Label" parent="Panel/Clothes" unique_id=1932927239]
+layout_mode = 0
+offset_left = -944.0
+offset_top = 248.0
+offset_right = -240.0
+offset_bottom = 328.0
+theme_override_fonts/font = ExtResource("2_hayl1")
+theme_override_font_sizes/font_size = 50
+text = "Decorations"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decor" type="Panel" parent="Panel" unique_id=1123261770]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 608.0
+offset_right = 840.0
+offset_bottom = 856.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_afjsh")
+
+[node name="Label2" type="Label" parent="Panel/Decor" unique_id=2125876624]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 176.0
+offset_right = 232.0
+offset_bottom = 225.0
+theme_override_fonts/font = ExtResource("2_hayl1")
+theme_override_font_sizes/font_size = 35
+text = "25 coins"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Panel/Decor" unique_id=77213758]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 176.0
+offset_right = 456.0
+offset_bottom = 225.0
+theme_override_fonts/font = ExtResource("2_hayl1")
+theme_override_font_sizes/font_size = 35
+text = "50 coins"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="Panel/Decor" unique_id=635633664]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 176.0
+offset_right = 656.0
+offset_bottom = 225.0
+theme_override_fonts/font = ExtResource("2_hayl1")
+theme_override_font_sizes/font_size = 35
+text = "75 coins"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Window" type="TextureButton" parent="Panel/Decor" unique_id=1591465236]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 750.0
+offset_bottom = 420.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("7_0sk1s")
+
+[node name="Sunflower" type="TextureButton" parent="Panel/Decor" unique_id=1632371036]
+layout_mode = 0
+offset_left = 296.0
+offset_right = 776.0
+offset_bottom = 750.0
+scale = Vector2(0.25, 0.25)
+texture_normal = ExtResource("8_hayl1")
+
+[node name="Yarn" type="TextureButton" parent="Panel/Decor" unique_id=515384928]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 24.0
+offset_right = 946.0
+offset_bottom = 304.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("9_q7j3g")
+
+[node name="Label5" type="Label" parent="Panel/Decor" unique_id=1414686299]
+layout_mode = 0
+offset_left = 944.0
+offset_top = 248.0
+offset_right = 1648.0
+offset_bottom = 328.0
+theme_override_fonts/font = ExtResource("2_hayl1")
+theme_override_font_sizes/font_size = 50
+text = "Clothes"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BetterCoin" type="Sprite2D" parent="." unique_id=89882258]
+position = Vector2(1432, 104)
+texture = ExtResource("1_s3f3m")
+script = ExtResource("2_sxxsk")
+
+[node name="Label" type="Label" parent="BetterCoin" unique_id=736353888]
+offset_left = 100.0
+offset_top = -32.0
+offset_right = 420.0
+offset_bottom = 32.0
+theme_override_fonts/font = ExtResource("2_hayl1")
+theme_override_font_sizes/font_size = 50
+text = "0"
+vertical_alignment = 1
+
+[node name="Back" type="TextureButton" parent="." unique_id=1513557942]
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 524.0
+offset_bottom = 179.0
+texture_normal = ExtResource("6_sxxsk")
+
+[node name="Label" type="Label" parent="Back" unique_id=1307292553]
+layout_mode = 0
+offset_right = 460.0
+offset_bottom = 115.0
+theme_override_fonts/font = ExtResource("2_hayl1")
+theme_override_font_sizes/font_size = 50
+text = "Back"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Panel/Food/Blueberry" to="BetterCoin" method="_on_blueberry_pressed"]
+[connection signal="pressed" from="Panel/Food/Fish" to="BetterCoin" method="_on_fish_pressed"]
+[connection signal="pressed" from="Panel/Food/Treat" to="BetterCoin" method="_on_treat_pressed"]
+[connection signal="pressed" from="Panel/Drink/Water" to="BetterCoin" method="_on_water_pressed"]
+[connection signal="pressed" from="Panel/Drink/Milk" to="BetterCoin" method="_on_milk_pressed"]
+[connection signal="pressed" from="Panel/Drink/DoccyP" to="BetterCoin" method="_on_doccy_p_pressed"]
+[connection signal="pressed" from="Panel/Decor/Window" to="BetterCoin" method="_on_window_pressed"]
+[connection signal="pressed" from="Panel/Decor/Sunflower" to="BetterCoin" method="_on_sunflower_pressed"]
+[connection signal="pressed" from="Panel/Decor/Yarn" to="BetterCoin" method="_on_yarn_pressed"]
+[connection signal="pressed" from="Back" to="BetterCoin" method="_on_back_pressed"]

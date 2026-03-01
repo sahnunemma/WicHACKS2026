@@ -1,0 +1,642 @@
+[gd_scene format=3 uid="uid://c3qkxt8cslqii"]
+
+[ext_resource type="Texture2D" uid="uid://dctagwl2hiq83" path="res://main/home_background2.png" id="1_w1mvj"]
+[ext_resource type="Texture2D" uid="uid://cmxw7f72ybsgx" path="res://main/w1.png" id="2_2ayvv"]
+[ext_resource type="Texture2D" uid="uid://dmtxbgst8flwv" path="res://main/window.png" id="2_5btcc"]
+[ext_resource type="Texture2D" uid="uid://c5pxf3lwdt3ff" path="res://main/window_anim1.png" id="2_51nlh"]
+[ext_resource type="Script" uid="uid://db6mttdmuhrxm" path="res://main/game.gd" id="2_w1mvj"]
+[ext_resource type="Texture2D" uid="uid://caa21bywhvbh1" path="res://main/window_anim2.png" id="3_f1bvf"]
+[ext_resource type="Texture2D" uid="uid://mf1ojej7uafl" path="res://main/button.png" id="3_lxycn"]
+[ext_resource type="Texture2D" uid="uid://diia5uqnci22j" path="res://main/w2.png" id="3_w1mvj"]
+[ext_resource type="Texture2D" uid="uid://h7tlx2151l8v" path="res://main/sunflower.png" id="3_wvorr"]
+[ext_resource type="Texture2D" uid="uid://7jkxu6m6krkv" path="res://main/window_anim3.png" id="4_aqkoq"]
+[ext_resource type="Texture2D" uid="uid://bglej3midr7gq" path="res://main/w3.png" id="4_lxycn"]
+[ext_resource type="Texture2D" uid="uid://bemfwfrc1awju" path="res://main/window_anim4.png" id="5_ma6c5"]
+[ext_resource type="Texture2D" uid="uid://xtf0tf1hftyd" path="res://main/window_anim5.png" id="6_cidvt"]
+[ext_resource type="Texture2D" uid="uid://1qdnhk1iv05b" path="res://main/widgetSleep3.png" id="7_rdsdt"]
+[ext_resource type="Texture2D" uid="uid://dt754rrgjc8jk" path="res://main/bathe.png" id="7_tdh31"]
+[ext_resource type="Script" uid="uid://cse6jdtavsasl" path="res://main/cat_stats.gd" id="7_x0ehs"]
+[ext_resource type="Texture2D" uid="uid://dsvtwkk81i4xe" path="res://main/food.png" id="8_x0ehs"]
+[ext_resource type="Texture2D" uid="uid://dgnqrohwsq3tp" path="res://main/happiness.png" id="9_rdsdt"]
+[ext_resource type="Texture2D" uid="uid://47vo0uvb48qc" path="res://main/sleep.png" id="10_d26pf"]
+[ext_resource type="FontFile" uid="uid://d11qckh7liqin" path="res://main/SuperAdorable-MAvyp.ttf" id="11_qlxsd"]
+[ext_resource type="Texture2D" uid="uid://bs6ygxo0y8rir" path="res://main/water.png" id="11_wh0ls"]
+[ext_resource type="Texture2D" uid="uid://b5rabshkj0ola" path="res://main/better coin.png" id="14_alrta"]
+[ext_resource type="Texture2D" uid="uid://b83yt78xm2v4g" path="res://main/heart.png" id="15_wh0ls"]
+[ext_resource type="Texture2D" uid="uid://ct7c1j2wggetf" path="res://main/water_bowl.png" id="16_7ot1m"]
+[ext_resource type="Texture2D" uid="uid://bx2arknuxqely" path="res://main/menu board.png" id="16_sa43c"]
+[ext_resource type="Texture2D" uid="uid://beaf0ew33m6d7" path="res://main/menu exit.png" id="17_c6lok"]
+[ext_resource type="Texture2D" uid="uid://bucdc6c7j6wuq" path="res://main/menu option.png" id="17_nnxq8"]
+[ext_resource type="Texture2D" uid="uid://dr0by2piy6oh" path="res://main/blueberry.png" id="18_alrta"]
+[ext_resource type="Texture2D" uid="uid://cxeb3cd34nbal" path="res://main/fish.png" id="19_5btcc"]
+[ext_resource type="Texture2D" uid="uid://dqnfbtq06krh0" path="res://main/treat.png" id="20_qa40o"]
+[ext_resource type="Texture2D" uid="uid://dqvn8u10i2l68" path="res://main/milk.png" id="21_wvorr"]
+[ext_resource type="Texture2D" uid="uid://d0kp0dqqw322q" path="res://main/doccyp.png" id="22_7ot1m"]
+[ext_resource type="Texture2D" uid="uid://4mb57po1ywwq" path="res://main/yarn.png" id="26_7ot1m"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5j460"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_51nlh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f1bvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_aqkoq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ma6c5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_cidvt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lxycn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_lxycn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_2ayvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_w1mvj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rdsdt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvorr"]
+size = Vector2(521, 700.1653)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j0o1r"]
+bg_color = Color(0.41960785, 0, 0.63529414, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w1mvj"]
+bg_color = Color(0.42037106, 0.0014571104, 0.6349121, 1)
+
+[node name="Node2D" type="Node2D" unique_id=1518560302]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=675712743]
+offset_top = -260.0
+offset_right = 1920.0
+offset_bottom = 820.0
+texture = ExtResource("1_w1mvj")
+expand_mode = 1
+
+[node name="Window1" type="AnimatedSprite2D" parent="." unique_id=1998681443]
+visible = false
+position = Vector2(1181, 199)
+sprite_frames = SubResource("SpriteFrames_5j460")
+frame_progress = 0.9025807
+
+[node name="Window" type="Sprite2D" parent="." unique_id=1379765424]
+position = Vector2(1179, 194)
+texture = ExtResource("2_5btcc")
+
+[node name="Sunflower" type="Sprite2D" parent="." unique_id=1963391912]
+visible = false
+position = Vector2(1681, 300)
+texture = ExtResource("3_wvorr")
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=556236938]
+offset_left = 895.0
+offset_top = 907.0
+offset_right = 1011.0
+offset_bottom = 994.0
+text = "67"
+placeholder_text = "67"
+script = ExtResource("2_w1mvj")
+
+[node name="Widget" type="AnimatedSprite2D" parent="." unique_id=141104999]
+position = Vector2(889, 458)
+scale = Vector2(1, 1.0083333)
+sprite_frames = SubResource("SpriteFrames_lxycn")
+frame_progress = 0.15728939
+script = ExtResource("7_x0ehs")
+
+[node name="Area2D" type="Area2D" parent="Widget" unique_id=1195167537]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Widget/Area2D" unique_id=710333400]
+position = Vector2(6.5, -43.636414)
+shape = SubResource("RectangleShape2D_wvorr")
+
+[node name="Buttons" type="Panel" parent="." unique_id=616495999]
+clip_contents = true
+offset_top = 810.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_j0o1r")
+
+[node name="Food_Drink2" type="TextureButton" parent="Buttons" unique_id=296267376]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 470.0
+offset_bottom = 125.0
+texture_normal = ExtResource("3_lxycn")
+
+[node name="Label" type="Label" parent="Buttons/Food_Drink2" unique_id=1070840347]
+layout_mode = 0
+offset_right = 460.0
+offset_bottom = 115.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 40
+text = "Food/Drink"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bathe2" type="TextureButton" parent="Buttons" unique_id=1897152886]
+layout_mode = 0
+offset_left = 490.0
+offset_top = 10.0
+offset_right = 950.0
+offset_bottom = 125.0
+texture_normal = ExtResource("3_lxycn")
+
+[node name="Label2" type="Label" parent="Buttons/Bathe2" unique_id=1205595830]
+layout_mode = 0
+offset_right = 460.0
+offset_bottom = 115.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 40
+text = "Bathe"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Play2" type="TextureButton" parent="Buttons" unique_id=2120707406]
+layout_mode = 0
+offset_left = 970.0
+offset_top = 10.0
+offset_right = 1430.0
+offset_bottom = 125.0
+texture_normal = ExtResource("3_lxycn")
+
+[node name="Label3" type="Label" parent="Buttons/Play2" unique_id=107118715]
+layout_mode = 0
+offset_right = 460.0
+offset_bottom = 115.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 40
+text = "Pet"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sleep2" type="TextureButton" parent="Buttons" unique_id=729038906]
+layout_mode = 0
+offset_left = 1450.0
+offset_top = 10.0
+offset_right = 1910.0
+offset_bottom = 125.0
+texture_normal = ExtResource("3_lxycn")
+
+[node name="Label4" type="Label" parent="Buttons/Sleep2" unique_id=1286331139]
+layout_mode = 0
+offset_right = 460.0
+offset_bottom = 115.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 40
+text = "Sleep"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Games2" type="TextureButton" parent="Buttons" unique_id=1321412823]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 145.0
+offset_right = 470.0
+offset_bottom = 260.0
+texture_normal = ExtResource("3_lxycn")
+
+[node name="Label5" type="Label" parent="Buttons/Games2" unique_id=868699213]
+layout_mode = 0
+offset_right = 460.0
+offset_bottom = 115.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 40
+text = "Games"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Store2" type="TextureButton" parent="Buttons" unique_id=1342861834]
+layout_mode = 0
+offset_left = 490.0
+offset_top = 145.0
+offset_right = 950.0
+offset_bottom = 260.0
+texture_normal = ExtResource("3_lxycn")
+
+[node name="Label6" type="Label" parent="Buttons/Store2" unique_id=1346721270]
+layout_mode = 0
+offset_right = 460.0
+offset_bottom = 115.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 40
+text = "Store"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Dress Up2" type="TextureButton" parent="Buttons" unique_id=427028923]
+layout_mode = 0
+offset_left = 970.0
+offset_top = 145.0
+offset_right = 1430.0
+offset_bottom = 260.0
+texture_normal = ExtResource("3_lxycn")
+
+[node name="Label7" type="Label" parent="Buttons/Dress Up2" unique_id=1486311889]
+layout_mode = 0
+offset_right = 460.0
+offset_bottom = 115.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 40
+text = "Dress Up"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decorate2" type="TextureButton" parent="Buttons" unique_id=1395614067]
+layout_mode = 0
+offset_left = 1450.0
+offset_top = 145.0
+offset_right = 1910.0
+offset_bottom = 260.0
+texture_normal = ExtResource("3_lxycn")
+
+[node name="Label8" type="Label" parent="Buttons/Decorate2" unique_id=2103456112]
+layout_mode = 0
+offset_right = 460.0
+offset_bottom = 115.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 40
+text = "Decorate"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Yarn" type="Sprite2D" parent="." unique_id=1659558902]
+visible = false
+position = Vector2(1442, 668)
+texture = ExtResource("26_7ot1m")
+
+[node name="Panel" type="Panel" parent="." unique_id=1716643343]
+offset_left = 10.0
+offset_top = 25.0
+offset_right = 470.0
+offset_bottom = 725.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_w1mvj")
+
+[node name="Label" type="Label" parent="Panel" unique_id=2131524715]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 10.0
+offset_right = 375.0
+offset_bottom = 95.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 60
+text = "Widget"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bathe" type="Sprite2D" parent="Panel" unique_id=139570394]
+position = Vector2(0, 300)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_tdh31")
+centered = false
+
+[node name="BatheProgress" type="ProgressBar" parent="Panel/Bathe" unique_id=1045954542]
+offset_left = 204.0
+offset_top = 70.0
+offset_right = 876.0
+offset_bottom = 141.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 35
+step = 1.0
+
+[node name="Food" type="Sprite2D" parent="Panel" unique_id=1556424697]
+position = Vector2(0, 100)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("8_x0ehs")
+centered = false
+
+[node name="FoodProgress" type="ProgressBar" parent="Panel/Food" unique_id=680958384]
+offset_left = 204.0
+offset_top = 70.0
+offset_right = 876.0
+offset_bottom = 141.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 35
+step = 1.0
+
+[node name="Happiness" type="Sprite2D" parent="Panel" unique_id=334606990]
+position = Vector2(0, 400)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("9_rdsdt")
+centered = false
+
+[node name="HappinessProgress" type="ProgressBar" parent="Panel/Happiness" unique_id=149054325]
+offset_left = 204.0
+offset_top = 70.0
+offset_right = 876.0
+offset_bottom = 141.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 35
+step = 1.0
+
+[node name="Sleep" type="Sprite2D" parent="Panel" unique_id=384554785]
+position = Vector2(0, 500)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_d26pf")
+centered = false
+
+[node name="SleepProgress" type="ProgressBar" parent="Panel/Sleep" unique_id=1556184599]
+offset_left = 204.0
+offset_top = 70.0
+offset_right = 876.0
+offset_bottom = 141.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 35
+step = 1.0
+
+[node name="Water" type="Sprite2D" parent="Panel" unique_id=967727877]
+position = Vector2(0, 200)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("16_7ot1m")
+centered = false
+
+[node name="WaterProgress" type="ProgressBar" parent="Panel/Water" unique_id=176906973]
+offset_left = 204.0
+offset_top = 70.0
+offset_right = 876.0
+offset_bottom = 141.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 35
+step = 1.0
+
+[node name="BetterCoin" type="Sprite2D" parent="." unique_id=999467631]
+position = Vector2(62, 674)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("14_alrta")
+
+[node name="NumCoins" type="Label" parent="BetterCoin" unique_id=1203612172]
+offset_left = 100.0
+offset_top = -30.0
+offset_right = 772.0
+offset_bottom = 41.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 50
+text = "0"
+vertical_alignment = 1
+
+[node name="Heart" type="Sprite2D" parent="." unique_id=2066709940]
+visible = false
+position = Vector2(1192, 132)
+texture = ExtResource("15_wh0ls")
+
+[node name="MenuBoard" type="Sprite2D" parent="." unique_id=1700653743]
+visible = false
+position = Vector2(960, 540)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("16_sa43c")
+
+[node name="ExitMenu" type="TextureButton" parent="MenuBoard" unique_id=383997895]
+offset_left = 237.33334
+offset_top = -255.33333
+offset_right = 394.33334
+offset_bottom = -111.33333
+texture_normal = ExtResource("17_c6lok")
+
+[node name="ExitGame" type="TextureButton" parent="MenuBoard" unique_id=773768030]
+offset_left = -234.0
+offset_top = 5.3333282
+offset_right = 226.0
+offset_bottom = 120.33333
+texture_normal = ExtResource("3_lxycn")
+
+[node name="Label" type="Label" parent="MenuBoard/ExitGame" unique_id=2011908012]
+layout_mode = 0
+offset_right = 460.0
+offset_bottom = 115.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 50
+text = "Exit"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Decorate_Menu" type="Sprite2D" parent="." unique_id=604594927]
+visible = false
+position = Vector2(960, 540)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("16_sa43c")
+
+[node name="ExitDecorMenu" type="TextureButton" parent="Decorate_Menu" unique_id=1273206850]
+offset_left = 237.33334
+offset_top = -255.33333
+offset_right = 394.33334
+offset_bottom = -111.33333
+texture_normal = ExtResource("17_c6lok")
+
+[node name="Window" type="Sprite2D" parent="Decorate_Menu" unique_id=1216907298]
+position = Vector2(-265.3333, -167.33333)
+scale = Vector2(0.33508772, 0.33508775)
+texture = ExtResource("2_5btcc")
+
+[node name="Sunflower" type="Sprite2D" parent="Decorate_Menu" unique_id=886873016]
+position = Vector2(-269.3333, 8.666626)
+scale = Vector2(0.2638889, 0.2638889)
+texture = ExtResource("3_wvorr")
+
+[node name="Yarn" type="Sprite2D" parent="Decorate_Menu" unique_id=2120013631]
+position = Vector2(-261.99994, 190)
+scale = Vector2(0.4595238, 0.4595238)
+texture = ExtResource("26_7ot1m")
+
+[node name="DisplayWindow" type="CheckButton" parent="Decorate_Menu" unique_id=1782542151]
+offset_left = -116.0
+offset_top = -204.66667
+offset_right = 29.444397
+offset_bottom = -125.33336
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 20
+text = "Display?"
+alignment = 1
+
+[node name="DisplaySunflower" type="CheckButton" parent="Decorate_Menu" unique_id=1017473118]
+offset_left = -116.0
+offset_top = -30.666672
+offset_right = 29.444397
+offset_bottom = 48.66664
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 20
+text = "Display?"
+alignment = 1
+
+[node name="DisplayYarn" type="CheckButton" parent="Decorate_Menu" unique_id=1392703067]
+offset_left = -116.0
+offset_top = 149.33333
+offset_right = 29.444397
+offset_bottom = 228.66664
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 20
+text = "Display?"
+alignment = 1
+
+[node name="Food_Drink_Menu" type="Sprite2D" parent="." unique_id=1887722658]
+visible = false
+position = Vector2(960, 540)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("16_sa43c")
+
+[node name="ExitFoodMenu" type="TextureButton" parent="Food_Drink_Menu" unique_id=980627724]
+offset_left = 237.33334
+offset_top = -255.33333
+offset_right = 394.33334
+offset_bottom = -111.33333
+texture_normal = ExtResource("17_c6lok")
+
+[node name="Blueberry" type="TextureButton" parent="Food_Drink_Menu" unique_id=803700859]
+offset_left = -416.00003
+offset_top = -269.33334
+offset_right = -216.00003
+offset_bottom = -69.33334
+texture_normal = ExtResource("18_alrta")
+
+[node name="BlueberryLabel" type="Label" parent="Food_Drink_Menu/Blueberry" unique_id=879772384]
+layout_mode = 0
+offset_left = 160.00005
+offset_top = 80.0
+offset_right = 288.00006
+offset_bottom = 108.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 20
+text = "0 Blueberries"
+vertical_alignment = 1
+
+[node name="Fish" type="TextureButton" parent="Food_Drink_Menu" unique_id=444285540]
+offset_left = -416.0
+offset_top = -114.66668
+offset_right = -216.0
+offset_bottom = 85.33332
+texture_normal = ExtResource("19_5btcc")
+
+[node name="FishLabel" type="Label" parent="Food_Drink_Menu/Fish" unique_id=775474647]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 80.0
+offset_right = 288.0
+offset_bottom = 108.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 20
+text = "0 Fish"
+vertical_alignment = 1
+
+[node name="Treat" type="TextureButton" parent="Food_Drink_Menu" unique_id=315465335]
+offset_left = -410.66666
+offset_top = 71.999985
+offset_right = -210.66666
+offset_bottom = 272.0
+texture_normal = ExtResource("20_qa40o")
+
+[node name="TreatLabel" type="Label" parent="Food_Drink_Menu/Treat" unique_id=544119576]
+layout_mode = 0
+offset_left = 154.667
+offset_top = 80.0
+offset_right = 282.667
+offset_bottom = 108.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 20
+text = "0 Fish"
+vertical_alignment = 1
+
+[node name="Water" type="TextureButton" parent="Food_Drink_Menu" unique_id=1169937547]
+offset_left = -80.0
+offset_top = -274.6667
+offset_right = 80.00003
+offset_bottom = -109.33334
+texture_normal = ExtResource("11_wh0ls")
+
+[node name="WaterLabel" type="Label" parent="Food_Drink_Menu/Water" unique_id=1474336170]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 85.33336
+offset_right = 288.0
+offset_bottom = 113.33336
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 20
+text = "0 Waters"
+vertical_alignment = 1
+
+[node name="Milk" type="TextureButton" parent="Food_Drink_Menu" unique_id=963464577]
+offset_left = -80.0
+offset_top = -93.33332
+offset_right = 120.0
+offset_bottom = 106.66668
+texture_normal = ExtResource("21_wvorr")
+
+[node name="MilkLabel" type="Label" parent="Food_Drink_Menu/Milk" unique_id=1854166010]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 80.0
+offset_right = 288.0
+offset_bottom = 108.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 20
+text = "0 Milks"
+vertical_alignment = 1
+
+[node name="DoccyP" type="TextureButton" parent="Food_Drink_Menu" unique_id=1528055433]
+offset_left = -80.0
+offset_top = 77.33334
+offset_right = 120.0
+offset_bottom = 277.33334
+texture_normal = ExtResource("22_7ot1m")
+
+[node name="DoccyPLabel" type="Label" parent="Food_Drink_Menu/DoccyP" unique_id=748025896]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 80.0
+offset_right = 288.0
+offset_bottom = 108.0
+theme_override_fonts/font = ExtResource("11_qlxsd")
+theme_override_font_sizes/font_size = 20
+text = "0 DoccyPs"
+vertical_alignment = 1
+
+[node name="EnterMenu" type="TextureButton" parent="." unique_id=208918757]
+offset_left = 1735.0
+offset_top = 14.0
+offset_right = 1893.0
+offset_bottom = 158.0
+texture_normal = ExtResource("17_nnxq8")
+
+[connection signal="mouse_entered" from="Widget/Area2D" to="Widget" method="_on_area_2d_mouse_entered"]
+[connection signal="pressed" from="Buttons/Food_Drink2" to="TextEdit" method="_on_food_drink_2_pressed"]
+[connection signal="pressed" from="Buttons/Bathe2" to="Widget" method="_on_bathe_2_pressed"]
+[connection signal="pressed" from="Buttons/Play2" to="Widget" method="_on_play_2_pressed"]
+[connection signal="pressed" from="Buttons/Sleep2" to="Widget" method="_on_sleep_2_pressed"]
+[connection signal="pressed" from="Buttons/Games2" to="Widget" method="_on_games_2_pressed"]
+[connection signal="pressed" from="Buttons/Store2" to="TextEdit" method="_on_store_2_pressed"]
+[connection signal="pressed" from="Buttons/Decorate2" to="TextEdit" method="_on_decorate_2_pressed"]
+[connection signal="pressed" from="MenuBoard/ExitMenu" to="TextEdit" method="_on_exit_menu_pressed"]
+[connection signal="pressed" from="MenuBoard/ExitGame" to="TextEdit" method="_on_exit_game_pressed"]
+[connection signal="pressed" from="Decorate_Menu/ExitDecorMenu" to="TextEdit" method="_on_exit_decor_menu_pressed"]
+[connection signal="toggled" from="Decorate_Menu/DisplayWindow" to="TextEdit" method="_on_display_window_toggled"]
+[connection signal="toggled" from="Decorate_Menu/DisplaySunflower" to="TextEdit" method="_on_display_sunflower_toggled"]
+[connection signal="toggled" from="Decorate_Menu/DisplayYarn" to="TextEdit" method="_on_display_yarn_toggled"]
+[connection signal="pressed" from="Food_Drink_Menu/ExitFoodMenu" to="TextEdit" method="_on_exit_food_menu_pressed"]
+[connection signal="pressed" from="Food_Drink_Menu/Blueberry" to="TextEdit" method="_on_blueberry_pressed"]
+[connection signal="pressed" from="Food_Drink_Menu/Fish" to="TextEdit" method="_on_fish_pressed"]
+[connection signal="pressed" from="Food_Drink_Menu/Treat" to="TextEdit" method="_on_treat_pressed"]
+[connection signal="pressed" from="Food_Drink_Menu/Water" to="TextEdit" method="_on_water_pressed"]
+[connection signal="pressed" from="Food_Drink_Menu/Milk" to="TextEdit" method="_on_milk_pressed"]
+[connection signal="pressed" from="Food_Drink_Menu/DoccyP" to="TextEdit" method="_on_doccy_p_pressed"]
+[connection signal="pressed" from="EnterMenu" to="TextEdit" method="_on_enter_menu_pressed"]
