@@ -1,8 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774219556
+::res://::1774363841
 buffer.gd::GDScript::6421671434435517089::1772369390::0::1::::<>Node<><>0<>0<><>::
 buffer.tscn::PackedScene::5326857009626272201::1772369390::0::1::::<><><>0<>0<><>::uid://bogh5uhuav8y5::::res://main/minigame_scene.png<>uid://cxqx8w2bggkh2::::res://buffer.gd<>uid://mf1ojej7uafl::::res://main/button.png<>uid://d11qckh7liqin::::res://main/SuperAdorable-MAvyp.ttf
-export_presets.cfg::TextFile::-1::1772384227::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1774363838::0::1::::<><><>0<>0<><>::
 FinalGameOver.tscn::PackedScene::7403003735489360713::1772392017::0::1::::<><><>0<>0<><>::uid://nknq5gd1o2jd::::res://art/creepy bg.png<>uid://dqp3ihobocay6::::res://final_game_over.gd<>uid://d11qckh7liqin::::res://main/SuperAdorable-MAvyp.ttf<>uid://mf1ojej7uafl::::res://main/button.png
 final_game_over.gd::GDScript::8314963967102354527::1772372805::0::1::::<>Node2D<><>0<>0<><>::
 food.gd::GDScript::6174554304945549912::1772369390::0::1::::<>Node2D<><>0<>0<><>::
@@ -12,6 +12,9 @@ game_over.tscn::PackedScene::1565070642314118043::1772374033::0::1::::<><><>0<>0
 hud.gd::GDScript::5263556637637484865::1772369390::0::1::::<>CanvasLayer<><>0<>0<><>::
 hud.tscn::PackedScene::8642855632650969938::1772369390::0::1::::<><><>0<>0<><>::uid://cg8yakgevo7wv::::res://hud.gd<>uid://c5xl0s4op0nky::::res://super-adorable-font/SuperAdorable-MAvyp.ttf<>uid://dxpxabo1yjwgy::::res://super-shiny-font/SuperShiny-0v0rG.ttf
 icon.svg::CompressedTexture2D::1790880795757653::1772369390::1772369546::1::::<><><>0<>0<>1d558fff71561543e2cf7e0d300c3350<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+index.apple-touch-icon.png::CompressedTexture2D::4079718778113242276::1774363841::1774363893::1::::<><><>0<>0<>6395e892584212ccfdd64442ffc018d3<>res://.godot/imported/index.apple-touch-icon.png-8085a11cc297d91deb55511843765958.ctex::
+index.icon.png::CompressedTexture2D::3601812990715947923::1774363841::1774363893::1::::<><><>0<>0<>0c20fab5b90a01f84230adf3fbfe1c20<>res://.godot/imported/index.icon.png-5665fad188e88d1e882500a4376bfe02.ctex::
+index.png::CompressedTexture2D::623547571362091165::1774363841::1774363893::1::::<><><>0<>0<>7a0c24ad5f393c71470b26c555d46168<>res://.godot/imported/index.png-5122033cac747157decad52589e2295c.ctex::
 main.gd::GDScript::6005496119968205597::1772369390::0::1::::<>Node<><>0<>0<><>::
 main.tscn::PackedScene::5926153398409090926::1772369390::0::1::::<><><>0<>0<><>::uid://crtdv5djku0ij::::res://main.gd<>uid://jeptelemf5cr::::res://food.tscn<>uid://ckudr8chj1kgo::::res://player.tscn<>uid://dvewtmm6d837k::::res://hud.tscn<>uid://c22pgbtnnv0o0::::res://art/grass_bg.png<>uid://wkeqqplnlavj::::res://game_over.tscn
 player.gd::GDScript::5448887185718568354::1772369390::0::1::::<>CharacterBody2D<><>0<>0<><>::
