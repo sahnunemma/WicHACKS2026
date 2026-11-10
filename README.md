@@ -1,12 +1,14 @@
 # Widget Whims
 *A cozy virtual pet game starring Widget*
 
+<img width="140" height="200" alt="w1" src="https://github.com/user-attachments/assets/c0e206cb-190c-4405-8f84-a9e354b9125d" />
+
 ## What does it do?
 Widget Whims is a virtual simulation where players can interact with Widget by talking to her, playing small activities, and exploring a cute, cozy environment. Keep her fed, clean, rested, and happy, earn coins from minigames, spend them in the shop, and dress her up. It's meant to be a lighthearted, relaxing experience that celebrates the WiC community.
 
 Built for WiCHacks 2026.
 
-**Please note:** [Tested on Windows and in the browser. Add anything else you tested.]
+**Please note:** [Tested on Windows and in the browser.]
 
 ## Why did we make this?
 We were inspired by the mascot of Rochester Institute of Technology's Women in Computing community and wanted to make something silly, cute, and whimsical centered around Widget.
