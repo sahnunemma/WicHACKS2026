@@ -74,4 +74,7 @@ The game actually works! We were able to implement playable interactions, and we
 We learned a lot about Godot's workflow, scene system, and GDScript programming. We also learned how to properly set up and upload a Godot project to GitHub for version control and collaboration.
 
 ## Team
-[users]
+[@sahnunemma](https://github.com/sahnunemma)
+[@nicklebacc](https://github.com/nicklebacc)
+[@jjo6880](https://github.com/jjo6880)
+
