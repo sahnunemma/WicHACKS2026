@@ -28,19 +28,25 @@ Double-click `WidgetWhims.exe` to start.
 4. Press Play.
 
 When you first run it, you'll land on the title screen. 
-[image here]
+<img width="1708" height="960" alt="Screenshot 2026-03-01 at 7 45 28 AM" src="https://github.com/user-attachments/assets/88a828f0-c99e-4fb2-9a38-d8c9af9a00b7" />
+
 
 ## Gameplay
 - **Care for Widget:** feed her, give her water, let her sleep, and give her a bath. Her stats slowly decay, so keep an eye on them.
-- **Play minigames:** earn coins by playing the minigames. [Describe each minigame briefly.]
+- **Play minigames:** earn coins by playing the minigames below.
 - **Visit the shop:** spend coins on items and outfits.
 - **Dress up:** customize Widget with what you buy.
-- **Reach the ending:** [Describe what triggers the ending and game over screens.]
+- **Game Over:** The game keeps going as long as you can keep Widget alive. See how long you can last!
+
+### Minigames
+**Shopping:** Walk around to collect food for Widget. You earn 1 coin for every piece of food you collect. Each round lasts 10 seconds.
+
+**Bug Catch:** Hover over the bugs to catch them and keep them in Widget's jar. You earn 1 coin for every bug you catch. Be careful not to click on the fish, because you lose coins every time you do!
 
 ### Controls
-- Click the buttons on screen to interact with Widget.
-- Use WASD to move Widget in the Shopping minigame.
-- Hover over items on screen with mouse in the Bug Catch minigame.
+- **Main game:** Click the on-screen buttons to interact with Widget.
+- **Shopping:** Use WASD to move Widget.
+- **Bug Catch:** Move the mouse over the bugs.
 
 
 ## Project structure
