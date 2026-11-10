@@ -10,10 +10,11 @@ config_version=5
 
 [application]
 
-config/name="FEEDING"
+config/name="Widget Whims"
+config/description="A pet sim for WIC's mascot, Widget!"
 run/main_scene="uid://bk08ong4m1pqa"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://cmxw7f72ybsgx"
 
 [autoload]
 

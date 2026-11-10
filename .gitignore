@@ -1,1 +1,4 @@
 .DS_Store
+.godot/
+*.translation
+export_credentials.cfg
