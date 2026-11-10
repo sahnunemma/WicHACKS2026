@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dvewtmm6d837k"]
 
-[ext_resource type="Script" uid="uid://cg8yakgevo7wv" path="res://source/ui/hud.gd" id="1_37p78"]
+[ext_resource type="Script" uid="uid://cg8yakgevo7wv" path="res://source/minigames/minigame1/start.gd" id="1_37p78"]
 [ext_resource type="FontFile" uid="uid://c5xl0s4op0nky" path="res://assets/fonts/super-adorable-font/SuperAdorable-MAvyp.ttf" id="2_8sq4i"]
 [ext_resource type="FontFile" uid="uid://dxpxabo1yjwgy" path="res://assets/fonts/super-shiny-font/SuperShiny-0v0rG.ttf" id="3_640wx"]
 

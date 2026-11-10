@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cpgnbbnv6ebq"]
 
 [ext_resource type="Texture2D" uid="uid://c53q21p0kfjna" path="res://assets/textures/items/2nd mini.png" id="1_g6v7b"]
-[ext_resource type="Script" uid="uid://bue1lc12m33iu" path="res://source/gameplay/bug.gd" id="1_hs7dx"]
+[ext_resource type="Script" uid="uid://bue1lc12m33iu" path="res://source/minigames/minigame2/bug.gd" id="1_hs7dx"]
 [ext_resource type="Texture2D" uid="uid://cpya3712x2oje" path="res://assets/textures/items/shop.png" id="3_q3ryj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6gu2e"]

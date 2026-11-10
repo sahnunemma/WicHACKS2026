@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://wkeqqplnlavj"]
 
-[ext_resource type="Script" uid="uid://s6i74fn53ti8" path="res://source/ui/game_over.gd" id="1_y26ei"]
+[ext_resource type="Script" uid="uid://s6i74fn53ti8" path="res://source/minigames/minigame1/game_over.gd" id="1_y26ei"]
 [ext_resource type="FontFile" uid="uid://c5xl0s4op0nky" path="res://assets/fonts/super-adorable-font/SuperAdorable-MAvyp.ttf" id="2_8u835"]
 [ext_resource type="Texture2D" uid="uid://dsx6a3tx26lwk" path="res://assets/textures/items/coin.png" id="2_yxx3c"]
 [ext_resource type="FontFile" uid="uid://dxpxabo1yjwgy" path="res://assets/fonts/super-shiny-font/SuperShiny-0v0rG.ttf" id="4_ftari"]

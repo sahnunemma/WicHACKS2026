@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ch1hdu5ua4yc0"]
 
-[ext_resource type="Script" uid="uid://848rod20jeju" path="res://source/ui/end_game.gd" id="1_weimh"]
+[ext_resource type="Script" uid="uid://848rod20jeju" path="res://source/minigames/minigame2/end_game.gd" id="1_weimh"]
 [ext_resource type="FontFile" uid="uid://1cq2mem7hm0x" path="res://assets/fonts/SuperAdorable-MAvyp.ttf" id="2_5q2h6"]
 
 [node name="EndGame" type="Node2D" unique_id=1948468505]

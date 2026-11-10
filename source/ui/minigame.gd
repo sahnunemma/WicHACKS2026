@@ -12,8 +12,8 @@ func _process(delta: float) -> void:
 
 
 func _on_feeding_pressed() -> void:
-	get_tree().change_scene_to_file("res://source/levels/main.tscn")
+	get_tree().change_scene_to_file("res://source/minigames/minigame1/minigame1.tscn")
 
 
 func _on_squish_bugs_pressed() -> void:
-	get_tree().change_scene_to_file("res://source/levels/Minigame2.tscn")
+	get_tree().change_scene_to_file("res://source/minigames/minigame2/minigame2.tscn")

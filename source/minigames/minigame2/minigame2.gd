@@ -21,7 +21,7 @@ func _input(event):
 	if event is InputEventMouseButton and event.pressed:
 		$paw.play("paw")
 
-var bug_scene = preload("res://source/gameplay/bug.tscn")
+var bug_scene = preload("res://source/minigames/minigame2/bug.tscn")
 
 func spawn_bugs():
 	var bug_instance = bug_scene.instantiate()

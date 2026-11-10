@@ -1,30 +1,30 @@
 [gd_scene format=3 uid="uid://ch5ms6r7g2td6"]
 
-[ext_resource type="Texture2D" uid="uid://bogh5uhuav8y5" path="res://assets/textures/backgrounds/minigame_scene.png" id="1_kfpd7"]
-[ext_resource type="Script" uid="uid://cxqx8w2bggkh2" path="res://source/gameplay/buffer.gd" id="2_kfpd7"]
-[ext_resource type="Texture2D" uid="uid://mf1ojej7uafl" path="res://assets/textures/ui/button.png" id="3_iliht"]
-[ext_resource type="FontFile" uid="uid://d11qckh7liqin" path="res://assets/fonts/SuperAdorable-MAvyp.ttf" id="4_moict"]
+[ext_resource type="Texture2D" uid="uid://bogh5uhuav8y5" path="res://assets/textures/backgrounds/minigame_scene.png" id="1_s0rew"]
+[ext_resource type="Script" uid="uid://cxqx8w2bggkh2" path="res://source/ui/minigame.gd" id="2_qiels"]
+[ext_resource type="Texture2D" uid="uid://mf1ojej7uafl" path="res://assets/textures/ui/button.png" id="3_syy8l"]
+[ext_resource type="FontFile" uid="uid://1cq2mem7hm0x" path="res://assets/fonts/SuperAdorable-MAvyp.ttf" id="4_248c8"]
 
 [node name="Node2D" type="Node2D" unique_id=690673511]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1799214268]
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("1_kfpd7")
-script = ExtResource("2_kfpd7")
+texture = ExtResource("1_s0rew")
+script = ExtResource("2_qiels")
 
 [node name="Feeding" type="TextureButton" parent="." unique_id=806663165]
 offset_left = 420.0
 offset_top = 600.0
 offset_right = 880.0
 offset_bottom = 715.0
-texture_normal = ExtResource("3_iliht")
+texture_normal = ExtResource("3_syy8l")
 
 [node name="Label" type="Label" parent="Feeding" unique_id=2107783228]
 layout_mode = 0
 offset_right = 460.0
 offset_bottom = 115.0
-theme_override_fonts/font = ExtResource("4_moict")
+theme_override_fonts/font = ExtResource("4_248c8")
 theme_override_font_sizes/font_size = 50
 text = "Feeding"
 horizontal_alignment = 1
@@ -35,13 +35,13 @@ offset_left = 1040.0
 offset_top = 600.0
 offset_right = 1500.0
 offset_bottom = 715.0
-texture_normal = ExtResource("3_iliht")
+texture_normal = ExtResource("3_syy8l")
 
 [node name="Label2" type="Label" parent="Squish Bugs" unique_id=386976551]
 layout_mode = 0
 offset_right = 460.0
 offset_bottom = 115.0
-theme_override_fonts/font = ExtResource("4_moict")
+theme_override_fonts/font = ExtResource("4_248c8")
 theme_override_font_sizes/font_size = 50
 text = "Squish Bugs"
 horizontal_alignment = 1

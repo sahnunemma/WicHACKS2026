@@ -30,7 +30,7 @@ func _on_treat_pressed() -> void:
 
 
 func _on_back_pressed() -> void:
-	get_tree().change_scene_to_file("res://source/levels/home.tscn")
+	get_tree().change_scene_to_file("res://source/ui/home.tscn")
 
 
 func _on_water_pressed() -> void:

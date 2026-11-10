@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://jeptelemf5cr"]
 
-[ext_resource type="Script" uid="uid://ct8aaioqi1pga" path="res://source/gameplay/food.gd" id="1_q6vj8"]
+[ext_resource type="Script" uid="uid://ct8aaioqi1pga" path="res://source/minigames/minigame1/food.gd" id="1_q6vj8"]
 [ext_resource type="Texture2D" uid="uid://c03ohxjvcwpit" path="res://assets/textures/items/tuna.png" id="2_pohk7"]
 [ext_resource type="Texture2D" uid="uid://c2efpjgxqprpq" path="res://assets/textures/items/bloob.png" id="2_v8piq"]
 [ext_resource type="Texture2D" uid="uid://dqnfbtq06krh0" path="res://assets/textures/items/treat.png" id="3_5fm71"]
